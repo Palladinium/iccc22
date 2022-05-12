@@ -1,0 +1,16 @@
+Loves(Fred,Fred) 0.369013
+Loves(Fred,Animals) 0.99995
+Loves(Animals,Fred) 0.372513
+Loves(Animals,Animals) 0.355014
+At(Fred,Zoo) 0.99995
+At(Animals,Zoo) 0.99995
+Play(Fred,AnimalFigurines) 0.99995
+Play(Animals,AnimalFigurines) 0.5015
+See(Fred,Fred) 0.505
+See(Fred,Animals) 0.506999
+See(Animals,Fred) 0.494001
+See(Animals,Animals) 0.4975
+EnjoySeeing(Fred,Fred) 0.625987
+EnjoySeeing(Fred,Animals) 0.859964
+EnjoySeeing(Animals,Fred) 0.635986
+EnjoySeeing(Animals,Animals) 0.638486

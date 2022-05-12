@@ -1,0 +1,16 @@
+character = { Peter }
+game = { Pool }
+place = { Pub }
+At(character, place)
+Likes(character, game)
+Good(character, game)
+Competitive(character)
+Playing(character, game)
+Win(character, game)
+2.0 Playing(Peter, Pool) ^ Good(Peter, Pool) ^ Competitive(Peter) => Win(Peter, Pool)
+999.0 Likes(Peter, Pool)
+999.0 Good(Peter, Pool)
+999.0 Competitive(Peter)
+999.0 At(Peter, Pub)
+999.0 Playing(Peter, Pool)
+999.0 !Win(Peter, Pool)

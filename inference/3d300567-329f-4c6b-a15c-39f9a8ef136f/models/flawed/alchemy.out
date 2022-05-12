@@ -1,0 +1,140 @@
+----------------- parameters ----------------
+-i = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/3d300567-329f-4c6b-a15c-39f9a8ef136f/models/flawed/input.mln
+-cw = 
+-ow = 
+-queryEvidence = 0
+-m = 0
+-a = 0
+-p = 0
+-ms = 0
+-bp = 0
+-efbp = 0
+-decision = 0
+-simtp = 0
+-outputNetwork = 0
+-counts = 0
+-seed = -1
+-lazy = 0
+-lazyNoApprox = 0
+-memLimit = -1
+-PrintSamplePerIteration = 0
+-SAInterval = 100
+-MaxSeconds = 
+-SATempDownRatio = 0.9
+-SA = 0
+-hybrid = 0
+-propstdev = tmp.sd
+-contSamples = 
+-mwsMaxSteps = 1000000
+-tries = 1
+-targetWt = 0
+-breakHardClauses = 0
+-heuristic = 2
+-tabuLength = 10
+-lazyLowState = 0
+-burnMinSteps = 100
+-burnMaxSteps = 100
+-minSteps = 2000
+-maxSteps = 2000
+-maxSeconds = -1
+-subInterval = 2
+-numRuns = 3
+-numSwap = 10
+-lifted = 0
+-useHC = 0
+-useCT = 0
+-convThresh = 0.0001
+-convIterations = 20
+-explicitRep = 0
+-hcCreateType = 0
+-hcCreateNoise = 0
+-lncIter = 0
+-noHC = 
+-numSolutions = 10
+-saRatio = 50
+-saTemperature = 80
+-lateSa = 1
+-numChains = 10
+-delta = 0.05
+-epsilonError = 0.01
+-fracConverged = 0.95
+-walksatType = 1
+-testConvergence = 0
+-samplesPerTest = 100
+-e = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/3d300567-329f-4c6b-a15c-39f9a8ef136f/models/flawed/input.db
+-r = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/3d300567-329f-4c6b-a15c-39f9a8ef136f/models/flawed/output.result
+-q = 
+-f = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/3d300567-329f-4c6b-a15c-39f9a8ef136f/models/flawed/query.db
+----------------- end of parameters ----------------
+Reading formulas and evidence predicates...
+input.mln28908_tmpalchemy.mln
+Adding clauses to MLN...
+converting to CNF:
+formula 0: !(Hate(Sophie,MacAndCheese) ^ Love(Sophie,MacAndCheese))
+clause 0: !Love(Sophie,MacAndCheese) v !Hate(Sophie,MacAndCheese)
+CNF conversion took 0 secs
+formula 1: At(Sophie,Home)
+clause 0: At(Sophie,Home)
+CNF conversion took 0 secs
+formula 2: Eating(Sophie,MacAndCheese)
+clause 0: Eating(Sophie,MacAndCheese)
+CNF conversion took 0 secs
+formula 3: Love(Sophie,MacAndCheese)
+clause 0: Love(Sophie,MacAndCheese)
+CNF conversion took 0 secs
+BEGIN CNF CONVERSION RESULT
+formula 0 idx 0: 999 !Love(Sophie,MacAndCheese) v !Hate(Sophie,MacAndCheese)
+formula 1 idx 0: 999 At(Sophie,Home)
+formula 2 idx 0: 999 Eating(Sophie,MacAndCheese)
+formula 3 idx 0: 999 Love(Sophie,MacAndCheese)
+END CNF CONVERSION RESULT
+Reading query predicates that are specified in query file...
+At(Sophie,Home)
+Eating(Sophie,MacAndCheese)
+Love(Sophie,MacAndCheese)
+Hate(Sophie,MacAndCheese)
+ThrowAway(Sophie,MacAndCheese)
+Set hard weight to 4006
+creating mrf...
+number of grounded predicates = 5
+number of grounded clauses = 4
+Time taken to construct MRF = 0 secs
+[VS] 0 secs
+>>> DONE: Initial num. of clauses: 4
+Initializing MC-SAT with MaxWalksat on hard clauses...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 0 secs, num. preds = 5, num. clauses = 4
+Done burning. 100 samples.
+Sample (per pred) 100, time elapsed = 0 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 200, time elapsed = 0 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 300, time elapsed = 0 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 400, time elapsed = 0 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 500, time elapsed = 0.01 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 600, time elapsed = 0.01 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 700, time elapsed = 0.01 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 800, time elapsed = 0.01 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 900, time elapsed = 0.01 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 1000, time elapsed = 0.01 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 1100, time elapsed = 0.01 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 1200, time elapsed = 0.01 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 1300, time elapsed = 0.01 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 1400, time elapsed = 0.01 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 1500, time elapsed = 0.01 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 1600, time elapsed = 0.01 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 1700, time elapsed = 0.01 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 1800, time elapsed = 0.01 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 1900, time elapsed = 0.02 secs, num. preds = 5, num. clauses = 4
+Sample (per pred) 2000, time elapsed = 0.02 secs, num. preds = 5, num. clauses = 4
+Done MC-SAT sampling. 2000 samples.
+Final ground predicate number: 5
+Final ground clause number: 4
+Time taken for MC-SAT sampling = 0.02 secs
+Time taken for SampleSat = 0.02 secs
+Time-Results: Init 0 Run 0.02 Total 0.02
+BEGIN CLAUSE TRUE COUNTS
+clause 0: 2000 / 2000 (1 groundings) 999 !Love(Sophie,MacAndCheese) v !Hate(Sophie,MacAndCheese)
+clause 1: 2000 / 2000 (1 groundings) 999 At(Sophie,Home)
+clause 2: 2000 / 2000 (1 groundings) 999 Eating(Sophie,MacAndCheese)
+clause 3: 2000 / 2000 (1 groundings) 999 Love(Sophie,MacAndCheese)
+END CLAUSE TRUE COUNTS
+total time taken = 0.02 secs

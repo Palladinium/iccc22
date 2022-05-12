@@ -1,0 +1,4 @@
+Competitive(Peter)
+Good(Peter, Pool)
+Playing(Peter, Pool)
+Win(Peter, Pool)

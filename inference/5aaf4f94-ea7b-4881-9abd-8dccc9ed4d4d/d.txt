@@ -1,0 +1,8 @@
+At(Animals, TrainMuseum)
+At(Fred, TrainMuseum)
+At(Trains, TrainMuseum)
+See(Animals, Animals)
+See(Animals, Fred)
+See(Animals, Trains)
+See(Fred, Animals)
+See(Trains, Animals)

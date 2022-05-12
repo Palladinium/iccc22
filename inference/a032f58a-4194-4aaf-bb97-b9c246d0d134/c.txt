@@ -1,0 +1,5 @@
+At(Animals, Zoo)
+At(Fred, Zoo)
+EnjoySeeing(Fred, Animals)
+Loves(Fred, Animals)
+See(Fred, Animals)

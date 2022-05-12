@@ -1,0 +1,8 @@
+Guilty(Jimmy)
+Hidden(Candy)
+In(Candy, Drawer)
+In(FoundCandy, Drawer)
+Is(Candy, Candy)
+Is(Candy, FoundCandy)
+Is(FoundCandy, Candy)
+Is(FoundCandy, FoundCandy)

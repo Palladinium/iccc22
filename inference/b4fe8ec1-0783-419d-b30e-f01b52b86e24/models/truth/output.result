@@ -1,0 +1,7 @@
+At(Peter,Pub) 0.99995
+Likes(Peter,Pool) 0.99995
+Good(Peter,Pool) 0.99995
+Competitive(Peter) 0.99995
+Playing(Peter,Pool) 0.99995
+Win(Peter,Pool) 4.9995e-05
+Drunk(Peter) 0.99995

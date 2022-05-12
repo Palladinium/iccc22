@@ -1,0 +1,16 @@
+character = { Sophie }
+food = { MacAndCheese }
+place = { Home }
+time = { Childhood, Now }
+At(character, place, time)
+Eating(character, food, time)
+Love(character, food, time)
+Hate(character, food, time)
+ThrowAway(character, food, time)
+999.0 !(Hate(Sophie, MacAndCheese, Childhood) ^ Love(Sophie, MacAndCheese, Childhood))
+999.0 !(Hate(Sophie, MacAndCheese, Now) ^ Love(Sophie, MacAndCheese, Now))
+999.0 At(Sophie, Home, Now)
+999.0 Eating(Sophie, MacAndCheese, Now)
+999.0 Love(Sophie, MacAndCheese, Childhood)
+999.0 Hate(Sophie, MacAndCheese, Now)
+999.0 ThrowAway(Sophie, MacAndCheese, Now)

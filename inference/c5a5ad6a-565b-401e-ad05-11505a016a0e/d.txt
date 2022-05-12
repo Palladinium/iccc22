@@ -1,0 +1,8 @@
+At(Animals, Zoo)
+At(Fred, Zoo)
+At(Trains, Zoo)
+See(Animals, Trains)
+See(Fred, Trains)
+See(Trains, Animals)
+See(Trains, Fred)
+See(Trains, Trains)

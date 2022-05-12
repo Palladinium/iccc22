@@ -1,0 +1,6 @@
+At(Peter, Pub)
+Competitive(Peter)
+Drunk(Peter)
+Good(Peter, Pool)
+Playing(Peter, Pool)
+Win(Peter, Pool)

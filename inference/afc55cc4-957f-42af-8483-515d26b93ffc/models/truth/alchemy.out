@@ -1,0 +1,186 @@
+----------------- parameters ----------------
+-i = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/afc55cc4-957f-42af-8483-515d26b93ffc/models/full/input.mln
+-cw = 
+-ow = 
+-queryEvidence = 0
+-m = 0
+-a = 0
+-p = 0
+-ms = 0
+-bp = 0
+-efbp = 0
+-decision = 0
+-simtp = 0
+-outputNetwork = 0
+-counts = 0
+-seed = -1
+-lazy = 0
+-lazyNoApprox = 0
+-memLimit = -1
+-PrintSamplePerIteration = 0
+-SAInterval = 100
+-MaxSeconds = 
+-SATempDownRatio = 0.9
+-SA = 0
+-hybrid = 0
+-propstdev = tmp.sd
+-contSamples = 
+-mwsMaxSteps = 1000000
+-tries = 1
+-targetWt = 0
+-breakHardClauses = 0
+-heuristic = 2
+-tabuLength = 10
+-lazyLowState = 0
+-burnMinSteps = 100
+-burnMaxSteps = 100
+-minSteps = 2000
+-maxSteps = 2000
+-maxSeconds = -1
+-subInterval = 2
+-numRuns = 3
+-numSwap = 10
+-lifted = 0
+-useHC = 0
+-useCT = 0
+-convThresh = 0.0001
+-convIterations = 20
+-explicitRep = 0
+-hcCreateType = 0
+-hcCreateNoise = 0
+-lncIter = 0
+-noHC = 
+-numSolutions = 10
+-saRatio = 50
+-saTemperature = 80
+-lateSa = 1
+-numChains = 10
+-delta = 0.05
+-epsilonError = 0.01
+-fracConverged = 0.95
+-walksatType = 1
+-testConvergence = 0
+-samplesPerTest = 100
+-e = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/afc55cc4-957f-42af-8483-515d26b93ffc/models/full/input.db
+-r = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/afc55cc4-957f-42af-8483-515d26b93ffc/models/full/output.result
+-q = 
+-f = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/afc55cc4-957f-42af-8483-515d26b93ffc/models/full/query.db
+----------------- end of parameters ----------------
+Reading formulas and evidence predicates...
+input.mln28883_tmpalchemy.mln
+Adding clauses to MLN...
+converting to CNF:
+formula 0: Struggling(Emma) => NeedHelp(Emma)
+clause 0: !Struggling(Emma) v NeedHelp(Emma)
+CNF conversion took 0 secs
+formula 1: Struggling(Neighbours) => NeedHelp(Neighbours)
+clause 0: !Struggling(Neighbours) v NeedHelp(Neighbours)
+CNF conversion took 0 secs
+formula 2: Pushing(Emma,Fridge) ^ NeedHelp(Emma) => (AcceptHelp(Emma) <=> MovedIn(Fridge))
+clause 0: !MovedIn(Fridge) v !Pushing(Emma,Fridge) v !NeedHelp(Emma) v AcceptHelp(Emma)
+clause 1: MovedIn(Fridge) v !Pushing(Emma,Fridge) v !NeedHelp(Emma) v !AcceptHelp(Emma)
+CNF conversion took 0 secs
+formula 3: Pushing(Neighbours,Fridge) ^ NeedHelp(Neighbours) => (AcceptHelp(Neighbours) <=> MovedIn(Fridge))
+clause 0: !MovedIn(Fridge) v !Pushing(Neighbours,Fridge) v !NeedHelp(Neighbours) v AcceptHelp(Neighbours)
+clause 1: MovedIn(Fridge) v !Pushing(Neighbours,Fridge) v !NeedHelp(Neighbours) v !AcceptHelp(Neighbours)
+CNF conversion took 0 secs
+formula 4: Moving(Emma)
+clause 0: Moving(Emma)
+CNF conversion took 0 secs
+formula 5: Pushing(Emma,Fridge)
+clause 0: Pushing(Emma,Fridge)
+CNF conversion took 0 secs
+formula 6: Struggling(Emma)
+clause 0: Struggling(Emma)
+CNF conversion took 0 secs
+formula 7: OfferHelp(Neighbours,Emma)
+clause 0: OfferHelp(Neighbours,Emma)
+CNF conversion took 0 secs
+formula 8: AcceptHelp(Emma)
+clause 0: AcceptHelp(Emma)
+CNF conversion took 0 secs
+formula 9: MovedIn(Fridge)
+clause 0: MovedIn(Fridge)
+CNF conversion took 0 secs
+BEGIN CNF CONVERSION RESULT
+formula 0 idx 0: 999 !Struggling(Emma) v NeedHelp(Emma)
+formula 1 idx 0: 999 !Struggling(Neighbours) v NeedHelp(Neighbours)
+formula 2 idx 0: 499.5 !MovedIn(Fridge) v !Pushing(Emma,Fridge) v !NeedHelp(Emma) v AcceptHelp(Emma)
+formula 2 idx 1: 499.5 MovedIn(Fridge) v !Pushing(Emma,Fridge) v !NeedHelp(Emma) v !AcceptHelp(Emma)
+formula 3 idx 0: 499.5 !MovedIn(Fridge) v !Pushing(Neighbours,Fridge) v !NeedHelp(Neighbours) v AcceptHelp(Neighbours)
+formula 3 idx 1: 499.5 MovedIn(Fridge) v !Pushing(Neighbours,Fridge) v !NeedHelp(Neighbours) v !AcceptHelp(Neighbours)
+formula 4 idx 0: 999 Moving(Emma)
+formula 5 idx 0: 999 Pushing(Emma,Fridge)
+formula 6 idx 0: 999 Struggling(Emma)
+formula 7 idx 0: 999 OfferHelp(Neighbours,Emma)
+formula 8 idx 0: 999 AcceptHelp(Emma)
+formula 9 idx 0: 999 MovedIn(Fridge)
+END CNF CONVERSION RESULT
+Reading query predicates that are specified in query file...
+Moving(Emma)
+Moving(Neighbours)
+MovedIn(Fridge)
+Pushing(Emma,Fridge)
+Pushing(Neighbours,Fridge)
+Struggling(Emma)
+Struggling(Neighbours)
+NeedHelp(Emma)
+NeedHelp(Neighbours)
+OfferHelp(Emma,Emma)
+OfferHelp(Emma,Neighbours)
+OfferHelp(Neighbours,Emma)
+OfferHelp(Neighbours,Neighbours)
+AcceptHelp(Emma)
+AcceptHelp(Neighbours)
+Set hard weight to 10000
+creating mrf...
+number of grounded predicates = 15
+number of grounded clauses = 12
+Time taken to construct MRF = 0 secs
+[VS] 0 secs
+>>> DONE: Initial num. of clauses: 12
+Initializing MC-SAT with MaxWalksat on hard clauses...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 0 secs, num. preds = 15, num. clauses = 12
+Done burning. 100 samples.
+Sample (per pred) 100, time elapsed = 0 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 200, time elapsed = 0 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 300, time elapsed = 0.01 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 400, time elapsed = 0.01 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 500, time elapsed = 0.01 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 600, time elapsed = 0.02 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 700, time elapsed = 0.02 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 800, time elapsed = 0.02 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 900, time elapsed = 0.03 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 1000, time elapsed = 0.03 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 1100, time elapsed = 0.03 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 1200, time elapsed = 0.04 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 1300, time elapsed = 0.04 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 1400, time elapsed = 0.04 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 1500, time elapsed = 0.04 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 1600, time elapsed = 0.05 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 1700, time elapsed = 0.05 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 1800, time elapsed = 0.05 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 1900, time elapsed = 0.05 secs, num. preds = 15, num. clauses = 12
+Sample (per pred) 2000, time elapsed = 0.06 secs, num. preds = 15, num. clauses = 12
+Done MC-SAT sampling. 2000 samples.
+Final ground predicate number: 15
+Final ground clause number: 12
+Time taken for MC-SAT sampling = 0.06 secs
+Time taken for SampleSat = 0.04 secs
+Time-Results: Init 0 Run 0.06 Total 0.06
+BEGIN CLAUSE TRUE COUNTS
+clause 0: 2000 / 2000 (1 groundings) 999 !Struggling(Emma) v NeedHelp(Emma)
+clause 1: 2000 / 2000 (1 groundings) 999 !Struggling(Neighbours) v NeedHelp(Neighbours)
+clause 2: 2000 / 2000 (1 groundings) 499.5 !MovedIn(Fridge) v !Pushing(Emma,Fridge) v !NeedHelp(Emma) v AcceptHelp(Emma)
+clause 3: 2000 / 2000 (1 groundings) 499.5 MovedIn(Fridge) v !Pushing(Emma,Fridge) v !NeedHelp(Emma) v !AcceptHelp(Emma)
+clause 4: 2000 / 2000 (1 groundings) 499.5 !MovedIn(Fridge) v !Pushing(Neighbours,Fridge) v !NeedHelp(Neighbours) v AcceptHelp(Neighbours)
+clause 5: 2000 / 2000 (1 groundings) 499.5 MovedIn(Fridge) v !Pushing(Neighbours,Fridge) v !NeedHelp(Neighbours) v !AcceptHelp(Neighbours)
+clause 6: 2000 / 2000 (1 groundings) 999 Moving(Emma)
+clause 7: 2000 / 2000 (1 groundings) 999 Pushing(Emma,Fridge)
+clause 8: 2000 / 2000 (1 groundings) 999 Struggling(Emma)
+clause 9: 2000 / 2000 (1 groundings) 999 OfferHelp(Neighbours,Emma)
+clause 10: 2000 / 2000 (1 groundings) 999 AcceptHelp(Emma)
+clause 11: 2000 / 2000 (1 groundings) 999 MovedIn(Fridge)
+END CLAUSE TRUE COUNTS
+total time taken = 0.06 secs

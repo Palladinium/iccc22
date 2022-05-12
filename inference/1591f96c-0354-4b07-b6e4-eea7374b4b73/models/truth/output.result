@@ -1,0 +1,14 @@
+At(Catherine,Beach) 0.99995
+At(Swimmer,Beach) 4.9995e-05
+Drowning(Catherine) 0.39951
+Drowning(Swimmer) 0.99995
+CallingOut(Catherine) 0.29552
+CallingOut(Swimmer) 4.9995e-05
+Person(Catherine) 0.587491
+Person(Swimmer) 4.9995e-05
+SwimToHelp(Catherine,Catherine) 0.89546
+SwimToHelp(Catherine,Swimmer) 0.99995
+SwimToHelp(Swimmer,Catherine) 0.886961
+SwimToHelp(Swimmer,Swimmer) 0.505
+NeedsHelp(Catherine) 0.59949
+NeedsHelp(Swimmer) 0.4995

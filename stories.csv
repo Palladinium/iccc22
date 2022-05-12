@@ -1,0 +1,48 @@
+id,companion,title,quality,quality_value,setup,reveal,explanation
+3d300567-329f-4c6b-a15c-39f9a8ef136f,ef853b1e-338b-4e09-b643-c3fedaae0cc7,The Macaroni,consistency,low,"Sophie is enjoying her evening at home.
+She is eating her favorite food, mac and cheese.",She gets halfway through the meal before throwing it away.,She hated mac and cheese.
+ef853b1e-338b-4e09-b643-c3fedaae0cc7,3d300567-329f-4c6b-a15c-39f9a8ef136f,The Macaroni,consistency,high,"Sophie is enjoying her evening at home.
+She is eating her favorite childhood food, mac and cheese.",She gets halfway through the meal before throwing it away.,She couldn't stand mac and cheese these days.
+a8312ecf-59d2-4d96-9a41-7d5c353fe9e0,a60b09d2-7d96-44e1-9ce4-14ed36cbf4f4,Sarah's Walk,consistency,low,"Sarah went to the park for a walk.
+She always brought Fluffy with her, and today was no exception.
+She went for a much longer walk than usual.
+When she returned home she was exhausted.","She smiled when she noticed Fluffy, eagerly waiting at a window for her to return.",
+a60b09d2-7d96-44e1-9ce4-14ed36cbf4f4,a8312ecf-59d2-4d96-9a41-7d5c353fe9e0,Sarah's Walk,consistency,high,"Sarah went to the park for a walk.
+She always brought her dog Fluffy with her, but today she wanted some alone time.
+She went for a much longer walk than usual.
+When she returned home she was exhausted.","She smiled when she noticed Fluffy, eagerly waiting at the door for her to return.",
+1591f96c-0354-4b07-b6e4-eea7374b4b73,8b4db8a5-b2f0-46ea-a64d-9208edbb21dd,Catherine at the Beach,consistency,low,"Catherine is enjoying her time at the seaside.
+The beach is quiet today, there's nobody around.
+She notices someone amongst the waves, calling out for help.
+Alarmed, she jumps in and swims out to help them as fast as she can.",They were just an inflatable tumbling in the current.,
+8b4db8a5-b2f0-46ea-a64d-9208edbb21dd,1591f96c-0354-4b07-b6e4-eea7374b4b73,Catherine at the Beach,consistency,high,"Catherine is enjoying her time at the seaside.
+The beach is quiet today, there's nobody around.
+She notices someone amongst the waves, flailing around and signaling for help.
+Alarmed, she jumps in and swims out to help them as fast as she can.",They were just an inflatable tumbling in the current.,
+afc55cc4-957f-42af-8483-515d26b93ffc,38370506-c31a-4ee1-a3a0-77a30da6eb19,Emma's Move,divergence,low,"Emma is moving furniture into her new apartment.
+She's struggling to push her fridge up the stairs.
+Her neighbours across the hall hear her struggling and offer to help.","Together, they get the fridge upstairs in no time.",
+38370506-c31a-4ee1-a3a0-77a30da6eb19,afc55cc4-957f-42af-8483-515d26b93ffc,Emma's Move,divergence,high,"Emma is moving furniture into her new apartment.
+She's struggling to push her fridge up the stairs.
+Her neighbours across the hall hear her struggling and offer to help.","Emma thanks them but gives up.
+She leaves the fridge in the stairwell.",
+df924f92-2b17-4e34-8915-cf743931626f,6436abf9-087a-4bf7-8ae7-b75b747568be,Jimmy and the Candy,divergence,low,"Jimmy ate too much candy, so his parents had to hide it from him.
+One day, he stumbled upon some candy his parents hid in a drawer.
+His parents told him not to eat it, but Jimmy ate it anyway.",Jimmy felt guilty eating the candy.,
+6436abf9-087a-4bf7-8ae7-b75b747568be,df924f92-2b17-4e34-8915-cf743931626f,Jimmy and the Candy,divergence,high,"Jimmy ate too much candy, so his parents had to hide it from him.
+One day, he stumbled upon some candy his parents hid in a drawer.
+His parents told him not to eat it, but Jimmy ate it anyway.",Jimmy spat it out immediately. It was a mothball!,
+81838d42-1023-47b2-b10a-952511552efd,f1950964-a906-4b8e-b4a7-1d2b3e3b5541,Katie's Weekend,certainty,low,"Katie just had a very long week at work.
+She couldn't wait for the weekend, she had made plans to relax and watch her favorite tv series.
+As Saturday morning rolled around, she woke up to a call from her boss.
+He asked her if she could come over to work.",She happily agreed and had a great time.,It was just another day at the office.
+f1950964-a906-4b8e-b4a7-1d2b3e3b5541,81838d42-1023-47b2-b10a-952511552efd,Katie's Weekend,certainty,high,"Katie just had a very long week at work.
+She couldn't wait for the weekend, she had made plans to relax and watch her favorite tv series.
+As Saturday morning rolled around, she woke up to a call from her boss.
+He asked her if she could come over to work.",She happily agreed and had a great time.,"Her boss had noticed how hard everyone worked last week, and threw a party at the office."
+aa0c3ea6-330a-42c1-9039-250242f2056f,b4fe8ec1-0783-419d-b30e-f01b52b86e24,Peter Plays Pool,certainty,low,"Peter likes to play pool.
+He's the best player among his friends, and always plays to win.
+One night, he's at the pub, chatting and playing with them.",He can't win a single game tonight.,
+b4fe8ec1-0783-419d-b30e-f01b52b86e24,aa0c3ea6-330a-42c1-9039-250242f2056f,Peter Plays Pool,certainty,high,"Peter likes to play pool.
+He's the best player among his friends, and always plays to win.
+One night, he's at the pub, chatting and playing with them.",He can't win a single game tonight.,He's had much more to drink than usual.

@@ -1,0 +1,10 @@
+At(Sophie,Home,Childhood) 0.495
+At(Sophie,Home,Now) 0.99995
+Eating(Sophie,MacAndCheese,Childhood) 0.512499
+Eating(Sophie,MacAndCheese,Now) 0.99995
+Love(Sophie,MacAndCheese,Childhood) 0.99995
+Love(Sophie,MacAndCheese,Now) 0.5045
+Hate(Sophie,MacAndCheese,Childhood) 4.9995e-05
+Hate(Sophie,MacAndCheese,Now) 4.9995e-05
+ThrowAway(Sophie,MacAndCheese,Childhood) 0.5035
+ThrowAway(Sophie,MacAndCheese,Now) 0.494001

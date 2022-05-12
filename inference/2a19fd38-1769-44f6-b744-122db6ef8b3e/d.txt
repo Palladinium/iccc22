@@ -1,0 +1,5 @@
+At(Fred, TrainMuseum)
+At(Trains, TrainMuseum)
+EnjoySeeing(Fred, Trains)
+Loves(Fred, Trains)
+See(Fred, Trains)

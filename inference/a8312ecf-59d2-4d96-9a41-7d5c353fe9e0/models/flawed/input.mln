@@ -1,0 +1,19 @@
+character = { Sarah, Fluffy }
+place = { Park, Home }
+time = { DuringWalk, AfterWalk }
+At(character, place, time)
+Waiting(character, place, time)
+LongWalk(character)
+999.0 !(At(Sarah, Park, DuringWalk) ^ At(Sarah, Home, DuringWalk))
+999.0 !(At(Sarah, Park, AfterWalk) ^ At(Sarah, Home, AfterWalk))
+999.0 !(At(Fluffy, Park, DuringWalk) ^ At(Fluffy, Home, DuringWalk))
+999.0 !(At(Fluffy, Park, AfterWalk) ^ At(Fluffy, Home, AfterWalk))
+999.0 Waiting(Sarah, Park, AfterWalk) => At(Sarah, Park, DuringWalk) ^ At(Sarah, Park, AfterWalk)
+999.0 Waiting(Sarah, Home, AfterWalk) => At(Sarah, Home, DuringWalk) ^ At(Sarah, Home, AfterWalk)
+999.0 Waiting(Fluffy, Park, AfterWalk) => At(Fluffy, Park, DuringWalk) ^ At(Fluffy, Park, AfterWalk)
+999.0 Waiting(Fluffy, Home, AfterWalk) => At(Fluffy, Home, DuringWalk) ^ At(Fluffy, Home, AfterWalk)
+999.0 At(Sarah, Park, DuringWalk)
+999.0 At(Sarah, Park, DuringWalk) => At(Fluffy, Park, DuringWalk)
+999.0 At(Sarah, Park, AfterWalk) => At(Fluffy, Park, AfterWalk)
+999.0 LongWalk(Sarah)
+999.0 At(Sarah, Home, AfterWalk)

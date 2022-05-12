@@ -1,0 +1,17 @@
+Moving(Emma) 0.99995
+Moving(Neighbours) 0.506999
+MovedIn(Fridge) 4.9995e-05
+Pushing(Emma,Fridge) 0.99995
+Pushing(Neighbours,Fridge) 0.410009
+Struggling(Emma) 0.99995
+Struggling(Neighbours) 0.316518
+NeedHelp(Emma) 0.99995
+NeedHelp(Neighbours) 0.60049
+OfferHelp(Emma,Emma) 0.493501
+OfferHelp(Emma,Neighbours) 0.496
+OfferHelp(Neighbours,Emma) 0.99995
+OfferHelp(Neighbours,Neighbours) 0.508499
+AcceptHelp(Emma) 4.9995e-05
+AcceptHelp(Neighbours) 0.411509
+Abandon(Emma,Fridge) 0.99995
+Abandon(Neighbours,Fridge) 0.499

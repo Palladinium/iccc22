@@ -1,0 +1,11 @@
+Hidden(FoundCandy) 0.4955
+Hidden(Candy) 0.99995
+In(FoundCandy,Drawer) 0.99995
+In(Candy,Drawer) 0.874463
+Is(FoundCandy,FoundCandy) 0.99995
+Is(FoundCandy,Candy) 0.855964
+Is(Candy,FoundCandy) 0.855964
+Is(Candy,Candy) 0.99995
+Eat(Jimmy,FoundCandy) 0.99995
+Eat(Jimmy,Candy) 0.505999
+Guilty(Jimmy) 0.5025

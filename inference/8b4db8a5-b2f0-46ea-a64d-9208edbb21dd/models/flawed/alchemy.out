@@ -1,0 +1,209 @@
+----------------- parameters ----------------
+-i = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/8b4db8a5-b2f0-46ea-a64d-9208edbb21dd/models/flawed/input.mln
+-cw = 
+-ow = 
+-queryEvidence = 0
+-m = 0
+-a = 0
+-p = 0
+-ms = 0
+-bp = 0
+-efbp = 0
+-decision = 0
+-simtp = 0
+-outputNetwork = 0
+-counts = 0
+-seed = -1
+-lazy = 0
+-lazyNoApprox = 0
+-memLimit = -1
+-PrintSamplePerIteration = 0
+-SAInterval = 100
+-MaxSeconds = 
+-SATempDownRatio = 0.9
+-SA = 0
+-hybrid = 0
+-propstdev = tmp.sd
+-contSamples = 
+-mwsMaxSteps = 1000000
+-tries = 1
+-targetWt = 0
+-breakHardClauses = 0
+-heuristic = 2
+-tabuLength = 10
+-lazyLowState = 0
+-burnMinSteps = 100
+-burnMaxSteps = 100
+-minSteps = 2000
+-maxSteps = 2000
+-maxSeconds = -1
+-subInterval = 2
+-numRuns = 3
+-numSwap = 10
+-lifted = 0
+-useHC = 0
+-useCT = 0
+-convThresh = 0.0001
+-convIterations = 20
+-explicitRep = 0
+-hcCreateType = 0
+-hcCreateNoise = 0
+-lncIter = 0
+-noHC = 
+-numSolutions = 10
+-saRatio = 50
+-saTemperature = 80
+-lateSa = 1
+-numChains = 10
+-delta = 0.05
+-epsilonError = 0.01
+-fracConverged = 0.95
+-walksatType = 1
+-testConvergence = 0
+-samplesPerTest = 100
+-e = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/8b4db8a5-b2f0-46ea-a64d-9208edbb21dd/models/flawed/input.db
+-r = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/8b4db8a5-b2f0-46ea-a64d-9208edbb21dd/models/flawed/output.result
+-q = 
+-f = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/8b4db8a5-b2f0-46ea-a64d-9208edbb21dd/models/flawed/query.db
+----------------- end of parameters ----------------
+Reading formulas and evidence predicates...
+input.mln28919_tmpalchemy.mln
+Adding clauses to MLN...
+converting to CNF:
+formula 0: Flailing(Catherine) => Person(Catherine) v RigidObject(Catherine) ^ TumblingInCurrent(Catherine)
+clause 0: !Flailing(Catherine) v RigidObject(Catherine) v Person(Catherine)
+clause 1: !Flailing(Catherine) v TumblingInCurrent(Catherine) v Person(Catherine)
+CNF conversion took 0 secs
+formula 1: Flailing(Swimmer) => Person(Swimmer) v RigidObject(Swimmer) ^ TumblingInCurrent(Swimmer)
+clause 0: !Flailing(Swimmer) v RigidObject(Swimmer) v Person(Swimmer)
+clause 1: !Flailing(Swimmer) v TumblingInCurrent(Swimmer) v Person(Swimmer)
+CNF conversion took 0 secs
+formula 2: Person(Swimmer)
+clause 0: Person(Swimmer)
+CNF conversion took 0 secs
+formula 3: Person(Catherine) ^ Drowning(Catherine) => NeedsHelp(Catherine)
+clause 0: !Drowning(Catherine) v !Person(Catherine) v NeedsHelp(Catherine)
+CNF conversion took 0 secs
+formula 4: Person(Swimmer) ^ Drowning(Swimmer) => NeedsHelp(Swimmer)
+clause 0: !Drowning(Swimmer) v !Person(Swimmer) v NeedsHelp(Swimmer)
+CNF conversion took 0 secs
+formula 5: At(Catherine,Beach) => SwimToHelp(Catherine,Catherine)
+clause 0: !At(Catherine,Beach) v SwimToHelp(Catherine,Catherine)
+CNF conversion took 0 secs
+formula 6: At(Catherine,Beach) => SwimToHelp(Swimmer,Catherine)
+clause 0: !At(Catherine,Beach) v SwimToHelp(Swimmer,Catherine)
+CNF conversion took 0 secs
+formula 7: At(Swimmer,Beach) => SwimToHelp(Catherine,Swimmer)
+clause 0: !At(Swimmer,Beach) v SwimToHelp(Catherine,Swimmer)
+CNF conversion took 0 secs
+formula 8: At(Swimmer,Beach) => SwimToHelp(Swimmer,Swimmer)
+clause 0: !At(Swimmer,Beach) v SwimToHelp(Swimmer,Swimmer)
+CNF conversion took 0 secs
+formula 9: At(Catherine,Beach)
+clause 0: At(Catherine,Beach)
+CNF conversion took 0 secs
+formula 10: !At(Swimmer,Beach)
+clause 0: !At(Swimmer,Beach)
+CNF conversion took 0 secs
+formula 11: Drowning(Swimmer)
+clause 0: Drowning(Swimmer)
+CNF conversion took 0 secs
+formula 12: Flailing(Swimmer)
+clause 0: Flailing(Swimmer)
+CNF conversion took 0 secs
+formula 13: SwimToHelp(Catherine,Swimmer)
+clause 0: SwimToHelp(Catherine,Swimmer)
+CNF conversion took 0 secs
+BEGIN CNF CONVERSION RESULT
+formula 0 idx 0: 499.5 !Flailing(Catherine) v RigidObject(Catherine) v Person(Catherine)
+formula 0 idx 1: 499.5 !Flailing(Catherine) v TumblingInCurrent(Catherine) v Person(Catherine)
+formula 1 idx 0: 499.5 !Flailing(Swimmer) v RigidObject(Swimmer) v Person(Swimmer)
+formula 1 idx 1: 499.5 !Flailing(Swimmer) v TumblingInCurrent(Swimmer) v Person(Swimmer)
+formula 2 idx 0: 999 Person(Swimmer)
+formula 3 idx 0: 999 !Drowning(Catherine) v !Person(Catherine) v NeedsHelp(Catherine)
+formula 4 idx 0: 999 !Drowning(Swimmer) v !Person(Swimmer) v NeedsHelp(Swimmer)
+formula 5 idx 0: 2 !At(Catherine,Beach) v SwimToHelp(Catherine,Catherine)
+formula 6 idx 0: 2 !At(Catherine,Beach) v SwimToHelp(Swimmer,Catherine)
+formula 7 idx 0: 2 !At(Swimmer,Beach) v SwimToHelp(Catherine,Swimmer)
+formula 8 idx 0: 2 !At(Swimmer,Beach) v SwimToHelp(Swimmer,Swimmer)
+formula 9 idx 0: 999 At(Catherine,Beach)
+formula 10 idx 0: 999 !At(Swimmer,Beach)
+formula 11 idx 0: 999 Drowning(Swimmer)
+formula 12 idx 0: 999 Flailing(Swimmer)
+formula 13 idx 0: 999 SwimToHelp(Catherine,Swimmer)
+END CNF CONVERSION RESULT
+Reading query predicates that are specified in query file...
+At(Catherine,Beach)
+At(Swimmer,Beach)
+Drowning(Catherine)
+Drowning(Swimmer)
+Flailing(Catherine)
+Flailing(Swimmer)
+RigidObject(Catherine)
+RigidObject(Swimmer)
+TumblingInCurrent(Catherine)
+TumblingInCurrent(Swimmer)
+Person(Catherine)
+Person(Swimmer)
+SwimToHelp(Catherine,Catherine)
+SwimToHelp(Catherine,Swimmer)
+SwimToHelp(Swimmer,Catherine)
+SwimToHelp(Swimmer,Swimmer)
+NeedsHelp(Catherine)
+NeedsHelp(Swimmer)
+Set hard weight to 10008
+creating mrf...
+number of grounded predicates = 18
+number of grounded clauses = 16
+Time taken to construct MRF = 0 secs
+[VS] 0 secs
+>>> DONE: Initial num. of clauses: 16
+Initializing MC-SAT with MaxWalksat on hard clauses...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 0 secs, num. preds = 18, num. clauses = 16
+Done burning. 100 samples.
+Sample (per pred) 100, time elapsed = 0.01 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 200, time elapsed = 0.01 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 300, time elapsed = 0.02 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 400, time elapsed = 0.02 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 500, time elapsed = 0.02 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 600, time elapsed = 0.03 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 700, time elapsed = 0.03 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 800, time elapsed = 0.03 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 900, time elapsed = 0.03 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 1000, time elapsed = 0.04 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 1100, time elapsed = 0.04 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 1200, time elapsed = 0.04 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 1300, time elapsed = 0.05 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 1400, time elapsed = 0.05 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 1500, time elapsed = 0.05 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 1600, time elapsed = 0.06 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 1700, time elapsed = 0.06 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 1800, time elapsed = 0.06 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 1900, time elapsed = 0.07 secs, num. preds = 18, num. clauses = 16
+Sample (per pred) 2000, time elapsed = 0.07 secs, num. preds = 18, num. clauses = 16
+Done MC-SAT sampling. 2000 samples.
+Final ground predicate number: 18
+Final ground clause number: 16
+Time taken for MC-SAT sampling = 0.07 secs
+Time taken for SampleSat = 0.04 secs
+Time-Results: Init 0 Run 0.07 Total 0.07
+BEGIN CLAUSE TRUE COUNTS
+clause 0: 2000 / 2000 (1 groundings) 499.5 !Flailing(Catherine) v RigidObject(Catherine) v Person(Catherine)
+clause 1: 2000 / 2000 (1 groundings) 499.5 !Flailing(Catherine) v TumblingInCurrent(Catherine) v Person(Catherine)
+clause 2: 2000 / 2000 (1 groundings) 499.5 !Flailing(Swimmer) v RigidObject(Swimmer) v Person(Swimmer)
+clause 3: 2000 / 2000 (1 groundings) 499.5 !Flailing(Swimmer) v TumblingInCurrent(Swimmer) v Person(Swimmer)
+clause 4: 2000 / 2000 (1 groundings) 999 Person(Swimmer)
+clause 5: 2000 / 2000 (1 groundings) 999 !Drowning(Catherine) v !Person(Catherine) v NeedsHelp(Catherine)
+clause 6: 2000 / 2000 (1 groundings) 999 !Drowning(Swimmer) v !Person(Swimmer) v NeedsHelp(Swimmer)
+clause 7: 1717 / 2000 (1 groundings) 2 !At(Catherine,Beach) v SwimToHelp(Catherine,Catherine)
+clause 8: 1756 / 2000 (1 groundings) 2 !At(Catherine,Beach) v SwimToHelp(Swimmer,Catherine)
+clause 9: 2000 / 2000 (1 groundings) 2 !At(Swimmer,Beach) v SwimToHelp(Catherine,Swimmer)
+clause 10: 2000 / 2000 (1 groundings) 2 !At(Swimmer,Beach) v SwimToHelp(Swimmer,Swimmer)
+clause 11: 2000 / 2000 (1 groundings) 999 At(Catherine,Beach)
+clause 12: 2000 / 2000 (1 groundings) 999 !At(Swimmer,Beach)
+clause 13: 2000 / 2000 (1 groundings) 999 Drowning(Swimmer)
+clause 14: 2000 / 2000 (1 groundings) 999 Flailing(Swimmer)
+clause 15: 2000 / 2000 (1 groundings) 999 SwimToHelp(Catherine,Swimmer)
+END CLAUSE TRUE COUNTS
+total time taken = 0.07 secs

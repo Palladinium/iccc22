@@ -1,0 +1,22 @@
+character = { Fred, Trains }
+toy = { TrainModels }
+place = { TrainMuseum }
+Loves(character, character)
+At(character, place)
+Play(character, toy)
+See(character, character)
+EnjoySeeing(character, character)
+999.0 At(Trains, TrainMuseum)
+999.0 See(Fred, Fred) => At(Fred, TrainMuseum) ^ At(Fred, TrainMuseum)
+999.0 See(Fred, Trains) => At(Fred, TrainMuseum) ^ At(Trains, TrainMuseum)
+999.0 See(Trains, Fred) => At(Trains, TrainMuseum) ^ At(Fred, TrainMuseum)
+999.0 See(Trains, Trains) => At(Trains, TrainMuseum) ^ At(Trains, TrainMuseum)
+2.0 Loves(Fred, Fred) => EnjoySeeing(Fred, Fred)
+2.0 Loves(Fred, Trains) => EnjoySeeing(Fred, Trains)
+2.0 Loves(Trains, Fred) => EnjoySeeing(Trains, Fred)
+2.0 Loves(Trains, Trains) => EnjoySeeing(Trains, Trains)
+999.0 Loves(Fred, Trains)
+999.0 Play(Fred, TrainModels)
+999.0 At(Fred, TrainMuseum)
+999.0 See(Fred, Trains)
+999.0 !EnjoySeeing(Fred, Trains)

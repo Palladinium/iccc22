@@ -1,0 +1,2 @@
+At(Fluffy, Home, AfterWalk)
+At(Fluffy, Home, DuringWalk)

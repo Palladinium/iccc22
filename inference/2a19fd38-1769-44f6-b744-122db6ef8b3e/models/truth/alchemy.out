@@ -1,0 +1,209 @@
+----------------- parameters ----------------
+-i = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/2a19fd38-1769-44f6-b744-122db6ef8b3e/models/full/input.mln
+-cw = 
+-ow = 
+-queryEvidence = 0
+-m = 0
+-a = 0
+-p = 0
+-ms = 0
+-bp = 0
+-efbp = 0
+-decision = 0
+-simtp = 0
+-outputNetwork = 0
+-counts = 0
+-seed = -1
+-lazy = 0
+-lazyNoApprox = 0
+-memLimit = -1
+-PrintSamplePerIteration = 0
+-SAInterval = 100
+-MaxSeconds = 
+-SATempDownRatio = 0.9
+-SA = 0
+-hybrid = 0
+-propstdev = tmp.sd
+-contSamples = 
+-mwsMaxSteps = 1000000
+-tries = 1
+-targetWt = 0
+-breakHardClauses = 0
+-heuristic = 2
+-tabuLength = 10
+-lazyLowState = 0
+-burnMinSteps = 100
+-burnMaxSteps = 100
+-minSteps = 2000
+-maxSteps = 2000
+-maxSeconds = -1
+-subInterval = 2
+-numRuns = 3
+-numSwap = 10
+-lifted = 0
+-useHC = 0
+-useCT = 0
+-convThresh = 0.0001
+-convIterations = 20
+-explicitRep = 0
+-hcCreateType = 0
+-hcCreateNoise = 0
+-lncIter = 0
+-noHC = 
+-numSolutions = 10
+-saRatio = 50
+-saTemperature = 80
+-lateSa = 1
+-numChains = 10
+-delta = 0.05
+-epsilonError = 0.01
+-fracConverged = 0.95
+-walksatType = 1
+-testConvergence = 0
+-samplesPerTest = 100
+-e = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/2a19fd38-1769-44f6-b744-122db6ef8b3e/models/full/input.db
+-r = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/2a19fd38-1769-44f6-b744-122db6ef8b3e/models/full/output.result
+-q = 
+-f = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/2a19fd38-1769-44f6-b744-122db6ef8b3e/models/full/query.db
+----------------- end of parameters ----------------
+Reading formulas and evidence predicates...
+input.mln28898_tmpalchemy.mln
+Adding clauses to MLN...
+converting to CNF:
+formula 0: At(Trains,TrainMuseum)
+clause 0: At(Trains,TrainMuseum)
+CNF conversion took 0 secs
+formula 1: See(Fred,Fred) => At(Fred,TrainMuseum) ^ At(Fred,TrainMuseum)
+clause 0: At(Fred,TrainMuseum) v !See(Fred,Fred)
+clause 1 (merged): At(Fred,TrainMuseum) v !See(Fred,Fred)
+CNF conversion took 0 secs
+formula 2: See(Fred,Trains) => At(Fred,TrainMuseum) ^ At(Trains,TrainMuseum)
+clause 0: At(Fred,TrainMuseum) v !See(Fred,Trains)
+clause 1: At(Trains,TrainMuseum) v !See(Fred,Trains)
+CNF conversion took 0 secs
+formula 3: See(Trains,Fred) => At(Trains,TrainMuseum) ^ At(Fred,TrainMuseum)
+clause 0: At(Trains,TrainMuseum) v !See(Trains,Fred)
+clause 1: At(Fred,TrainMuseum) v !See(Trains,Fred)
+CNF conversion took 0 secs
+formula 4: See(Trains,Trains) => At(Trains,TrainMuseum) ^ At(Trains,TrainMuseum)
+clause 0: At(Trains,TrainMuseum) v !See(Trains,Trains)
+clause 1 (merged): At(Trains,TrainMuseum) v !See(Trains,Trains)
+CNF conversion took 0 secs
+formula 5: Loves(Fred,Fred) => EnjoySeeing(Fred,Fred)
+clause 0: !Loves(Fred,Fred) v EnjoySeeing(Fred,Fred)
+CNF conversion took 0 secs
+formula 6: Loves(Fred,Trains) => EnjoySeeing(Fred,Trains)
+clause 0: !Loves(Fred,Trains) v EnjoySeeing(Fred,Trains)
+CNF conversion took 0 secs
+formula 7: Loves(Trains,Fred) => EnjoySeeing(Trains,Fred)
+clause 0: !Loves(Trains,Fred) v EnjoySeeing(Trains,Fred)
+CNF conversion took 0 secs
+formula 8: Loves(Trains,Trains) => EnjoySeeing(Trains,Trains)
+clause 0: !Loves(Trains,Trains) v EnjoySeeing(Trains,Trains)
+CNF conversion took 0 secs
+formula 9: Loves(Fred,Trains)
+clause 0: Loves(Fred,Trains)
+CNF conversion took 0 secs
+formula 10: Play(Fred,TrainModels)
+clause 0: Play(Fred,TrainModels)
+CNF conversion took 0 secs
+formula 11: At(Fred,TrainMuseum)
+clause 0: At(Fred,TrainMuseum)
+CNF conversion took 0 secs
+formula 12: See(Fred,Trains)
+clause 0: See(Fred,Trains)
+CNF conversion took 0 secs
+formula 13: !EnjoySeeing(Fred,Trains)
+clause 0: !EnjoySeeing(Fred,Trains)
+CNF conversion took 0 secs
+BEGIN CNF CONVERSION RESULT
+formula 0 idx 0: 999 At(Trains,TrainMuseum)
+formula 1 idx 0: 999 At(Fred,TrainMuseum) v !See(Fred,Fred)
+formula 2 idx 0: 499.5 At(Fred,TrainMuseum) v !See(Fred,Trains)
+formula 2 idx 1: 499.5 At(Trains,TrainMuseum) v !See(Fred,Trains)
+formula 3 idx 0: 499.5 At(Trains,TrainMuseum) v !See(Trains,Fred)
+formula 3 idx 1: 499.5 At(Fred,TrainMuseum) v !See(Trains,Fred)
+formula 4 idx 0: 999 At(Trains,TrainMuseum) v !See(Trains,Trains)
+formula 5 idx 0: 2 !Loves(Fred,Fred) v EnjoySeeing(Fred,Fred)
+formula 6 idx 0: 2 !Loves(Fred,Trains) v EnjoySeeing(Fred,Trains)
+formula 7 idx 0: 2 !Loves(Trains,Fred) v EnjoySeeing(Trains,Fred)
+formula 8 idx 0: 2 !Loves(Trains,Trains) v EnjoySeeing(Trains,Trains)
+formula 9 idx 0: 999 Loves(Fred,Trains)
+formula 10 idx 0: 999 Play(Fred,TrainModels)
+formula 11 idx 0: 999 At(Fred,TrainMuseum)
+formula 12 idx 0: 999 See(Fred,Trains)
+formula 13 idx 0: 999 !EnjoySeeing(Fred,Trains)
+END CNF CONVERSION RESULT
+Reading query predicates that are specified in query file...
+Loves(Fred,Fred)
+Loves(Fred,Trains)
+Loves(Trains,Fred)
+Loves(Trains,Trains)
+At(Fred,TrainMuseum)
+At(Trains,TrainMuseum)
+Play(Fred,TrainModels)
+Play(Trains,TrainModels)
+See(Fred,Fred)
+See(Fred,Trains)
+See(Trains,Fred)
+See(Trains,Trains)
+EnjoySeeing(Fred,Fred)
+EnjoySeeing(Fred,Trains)
+EnjoySeeing(Trains,Fred)
+EnjoySeeing(Trains,Trains)
+Set hard weight to 10008
+creating mrf...
+number of grounded predicates = 16
+number of grounded clauses = 16
+Time taken to construct MRF = 0 secs
+[VS] 0 secs
+>>> DONE: Initial num. of clauses: 16
+Initializing MC-SAT with MaxWalksat on hard clauses...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 0 secs, num. preds = 16, num. clauses = 16
+Done burning. 100 samples.
+Sample (per pred) 100, time elapsed = 0.01 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 200, time elapsed = 0.01 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 300, time elapsed = 0.01 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 400, time elapsed = 0.02 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 500, time elapsed = 0.02 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 600, time elapsed = 0.02 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 700, time elapsed = 0.02 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 800, time elapsed = 0.03 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 900, time elapsed = 0.03 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 1000, time elapsed = 0.04 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 1100, time elapsed = 0.04 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 1200, time elapsed = 0.04 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 1300, time elapsed = 0.05 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 1400, time elapsed = 0.05 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 1500, time elapsed = 0.05 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 1600, time elapsed = 0.06 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 1700, time elapsed = 0.06 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 1800, time elapsed = 0.06 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 1900, time elapsed = 0.07 secs, num. preds = 16, num. clauses = 16
+Sample (per pred) 2000, time elapsed = 0.07 secs, num. preds = 16, num. clauses = 16
+Done MC-SAT sampling. 2000 samples.
+Final ground predicate number: 16
+Final ground clause number: 16
+Time taken for MC-SAT sampling = 0.07 secs
+Time taken for SampleSat = 0.06 secs
+Time-Results: Init 0 Run 0.07 Total 0.07
+BEGIN CLAUSE TRUE COUNTS
+clause 0: 2000 / 2000 (1 groundings) 999 At(Trains,TrainMuseum)
+clause 1: 2000 / 2000 (1 groundings) 999 At(Fred,TrainMuseum) v !See(Fred,Fred)
+clause 2: 2000 / 2000 (1 groundings) 499.5 At(Fred,TrainMuseum) v !See(Fred,Trains)
+clause 3: 2000 / 2000 (1 groundings) 499.5 At(Trains,TrainMuseum) v !See(Fred,Trains)
+clause 4: 2000 / 2000 (1 groundings) 499.5 At(Trains,TrainMuseum) v !See(Trains,Fred)
+clause 5: 2000 / 2000 (1 groundings) 499.5 At(Fred,TrainMuseum) v !See(Trains,Fred)
+clause 6: 2000 / 2000 (1 groundings) 999 At(Trains,TrainMuseum) v !See(Trains,Trains)
+clause 7: 1908 / 2000 (1 groundings) 2 !Loves(Fred,Fred) v EnjoySeeing(Fred,Fred)
+clause 8: 0 / 2000 (1 groundings) 2 !Loves(Fred,Trains) v EnjoySeeing(Fred,Trains)
+clause 9: 1908 / 2000 (1 groundings) 2 !Loves(Trains,Fred) v EnjoySeeing(Trains,Fred)
+clause 10: 1906 / 2000 (1 groundings) 2 !Loves(Trains,Trains) v EnjoySeeing(Trains,Trains)
+clause 11: 2000 / 2000 (1 groundings) 999 Loves(Fred,Trains)
+clause 12: 2000 / 2000 (1 groundings) 999 Play(Fred,TrainModels)
+clause 13: 2000 / 2000 (1 groundings) 999 At(Fred,TrainMuseum)
+clause 14: 2000 / 2000 (1 groundings) 999 See(Fred,Trains)
+clause 15: 2000 / 2000 (1 groundings) 999 !EnjoySeeing(Fred,Trains)
+END CLAUSE TRUE COUNTS
+total time taken = 0.07 secs

@@ -1,0 +1,283 @@
+----------------- parameters ----------------
+-i = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/df924f92-2b17-4e34-8915-cf743931626f/models/full/input.mln
+-cw = 
+-ow = 
+-queryEvidence = 0
+-m = 0
+-a = 0
+-p = 0
+-ms = 0
+-bp = 0
+-efbp = 0
+-decision = 0
+-simtp = 0
+-outputNetwork = 0
+-counts = 0
+-seed = -1
+-lazy = 0
+-lazyNoApprox = 0
+-memLimit = -1
+-PrintSamplePerIteration = 0
+-SAInterval = 100
+-MaxSeconds = 
+-SATempDownRatio = 0.9
+-SA = 0
+-hybrid = 0
+-propstdev = tmp.sd
+-contSamples = 
+-mwsMaxSteps = 1000000
+-tries = 1
+-targetWt = 0
+-breakHardClauses = 0
+-heuristic = 2
+-tabuLength = 10
+-lazyLowState = 0
+-burnMinSteps = 100
+-burnMaxSteps = 100
+-minSteps = 2000
+-maxSteps = 2000
+-maxSeconds = -1
+-subInterval = 2
+-numRuns = 3
+-numSwap = 10
+-lifted = 0
+-useHC = 0
+-useCT = 0
+-convThresh = 0.0001
+-convIterations = 20
+-explicitRep = 0
+-hcCreateType = 0
+-hcCreateNoise = 0
+-lncIter = 0
+-noHC = 
+-numSolutions = 10
+-saRatio = 50
+-saTemperature = 80
+-lateSa = 1
+-numChains = 10
+-delta = 0.05
+-epsilonError = 0.01
+-fracConverged = 0.95
+-walksatType = 1
+-testConvergence = 0
+-samplesPerTest = 100
+-e = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/df924f92-2b17-4e34-8915-cf743931626f/models/full/input.db
+-r = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/df924f92-2b17-4e34-8915-cf743931626f/models/full/output.result
+-q = 
+-f = /home/patrick/projects/phd/experiments/experiment-1/scripts/../inference/df924f92-2b17-4e34-8915-cf743931626f/models/full/query.db
+----------------- end of parameters ----------------
+Reading formulas and evidence predicates...
+input.mln28939_tmpalchemy.mln
+Adding clauses to MLN...
+converting to CNF:
+formula 0: Hidden(FoundCandy) => In(FoundCandy,Drawer)
+clause 0: !Hidden(FoundCandy) v In(FoundCandy,Drawer)
+CNF conversion took 0 secs
+formula 1: Hidden(Candy) => In(Candy,Drawer)
+clause 0: !Hidden(Candy) v In(Candy,Drawer)
+CNF conversion took 0 secs
+formula 2: Is(FoundCandy,FoundCandy)
+clause 0: Is(FoundCandy,FoundCandy)
+CNF conversion took 0 secs
+formula 3: Is(Candy,Candy)
+clause 0: Is(Candy,Candy)
+CNF conversion took 0 secs
+formula 4: Is(FoundCandy,FoundCandy) <=> Is(FoundCandy,FoundCandy)
+clause 0: Is(FoundCandy,FoundCandy) v !Is(FoundCandy,FoundCandy)
+clause 1 (merged): Is(FoundCandy,FoundCandy) v !Is(FoundCandy,FoundCandy)
+CNF conversion took 0 secs
+formula 5: Is(FoundCandy,Candy) <=> Is(Candy,FoundCandy)
+clause 0: Is(FoundCandy,Candy) v !Is(Candy,FoundCandy)
+clause 1: Is(Candy,FoundCandy) v !Is(FoundCandy,Candy)
+CNF conversion took 0 secs
+formula 6: Is(Candy,FoundCandy) <=> Is(FoundCandy,Candy)
+clause 0 (merged): Is(Candy,FoundCandy) v !Is(FoundCandy,Candy)
+clause 1 (merged): Is(FoundCandy,Candy) v !Is(Candy,FoundCandy)
+CNF conversion took 0 secs
+formula 7: Is(Candy,Candy) <=> Is(Candy,Candy)
+clause 0: Is(Candy,Candy) v !Is(Candy,Candy)
+clause 1 (merged): Is(Candy,Candy) v !Is(Candy,Candy)
+CNF conversion took 0 secs
+formula 8: Is(FoundCandy,FoundCandy) ^ Is(FoundCandy,FoundCandy) => Is(FoundCandy,FoundCandy)
+clause 0 (merged): Is(FoundCandy,FoundCandy) v !Is(FoundCandy,FoundCandy)
+CNF conversion took 0 secs
+formula 9: Is(FoundCandy,FoundCandy) ^ Is(FoundCandy,Candy) => Is(FoundCandy,Candy)
+clause 0: Is(FoundCandy,Candy) v !Is(FoundCandy,FoundCandy) v !Is(FoundCandy,Candy)
+CNF conversion took 0 secs
+formula 10: Is(FoundCandy,Candy) ^ Is(Candy,FoundCandy) => Is(FoundCandy,FoundCandy)
+clause 0: Is(FoundCandy,FoundCandy) v !Is(FoundCandy,Candy) v !Is(Candy,FoundCandy)
+CNF conversion took 0 secs
+formula 11: Is(FoundCandy,Candy) ^ Is(Candy,Candy) => Is(FoundCandy,Candy)
+clause 0: Is(FoundCandy,Candy) v !Is(FoundCandy,Candy) v !Is(Candy,Candy)
+CNF conversion took 0 secs
+formula 12: Is(Candy,FoundCandy) ^ Is(FoundCandy,FoundCandy) => Is(Candy,FoundCandy)
+clause 0: Is(Candy,FoundCandy) v !Is(FoundCandy,FoundCandy) v !Is(Candy,FoundCandy)
+CNF conversion took 0 secs
+formula 13: Is(Candy,FoundCandy) ^ Is(FoundCandy,Candy) => Is(Candy,Candy)
+clause 0: Is(Candy,Candy) v !Is(FoundCandy,Candy) v !Is(Candy,FoundCandy)
+CNF conversion took 0 secs
+formula 14: Is(Candy,Candy) ^ Is(Candy,FoundCandy) => Is(Candy,FoundCandy)
+clause 0: Is(Candy,FoundCandy) v !Is(Candy,FoundCandy) v !Is(Candy,Candy)
+CNF conversion took 0 secs
+formula 15: Is(Candy,Candy) ^ Is(Candy,Candy) => Is(Candy,Candy)
+clause 0 (merged): Is(Candy,Candy) v !Is(Candy,Candy)
+CNF conversion took 0 secs
+formula 16: Is(FoundCandy,FoundCandy) => (In(FoundCandy,Drawer) <=> In(FoundCandy,Drawer))
+clause 0: In(FoundCandy,Drawer) v !In(FoundCandy,Drawer) v !Is(FoundCandy,FoundCandy)
+clause 1 (merged): In(FoundCandy,Drawer) v !In(FoundCandy,Drawer) v !Is(FoundCandy,FoundCandy)
+CNF conversion took 0 secs
+formula 17: Is(FoundCandy,Candy) => (In(FoundCandy,Drawer) <=> In(Candy,Drawer))
+clause 0: In(FoundCandy,Drawer) v !In(Candy,Drawer) v !Is(FoundCandy,Candy)
+clause 1: In(Candy,Drawer) v !In(FoundCandy,Drawer) v !Is(FoundCandy,Candy)
+CNF conversion took 0 secs
+formula 18: Is(Candy,FoundCandy) => (In(Candy,Drawer) <=> In(FoundCandy,Drawer))
+clause 0: In(Candy,Drawer) v !In(FoundCandy,Drawer) v !Is(Candy,FoundCandy)
+clause 1: In(FoundCandy,Drawer) v !In(Candy,Drawer) v !Is(Candy,FoundCandy)
+CNF conversion took 0 secs
+formula 19: Is(Candy,Candy) => (In(Candy,Drawer) <=> In(Candy,Drawer))
+clause 0: In(Candy,Drawer) v !In(Candy,Drawer) v !Is(Candy,Candy)
+clause 1 (merged): In(Candy,Drawer) v !In(Candy,Drawer) v !Is(Candy,Candy)
+CNF conversion took 0 secs
+formula 20: In(FoundCandy,Drawer) ^ In(FoundCandy,Drawer) => Is(FoundCandy,FoundCandy)
+clause 0: !In(FoundCandy,Drawer) v Is(FoundCandy,FoundCandy)
+CNF conversion took 0 secs
+formula 21: In(FoundCandy,Drawer) ^ In(Candy,Drawer) => Is(FoundCandy,Candy)
+clause 0: !In(FoundCandy,Drawer) v !In(Candy,Drawer) v Is(FoundCandy,Candy)
+CNF conversion took 0 secs
+formula 22: In(Candy,Drawer) ^ In(FoundCandy,Drawer) => Is(Candy,FoundCandy)
+clause 0: !In(FoundCandy,Drawer) v !In(Candy,Drawer) v Is(Candy,FoundCandy)
+CNF conversion took 0 secs
+formula 23: In(Candy,Drawer) ^ In(Candy,Drawer) => Is(Candy,Candy)
+clause 0: !In(Candy,Drawer) v Is(Candy,Candy)
+CNF conversion took 0 secs
+formula 24: Hidden(Candy)
+clause 0: Hidden(Candy)
+CNF conversion took 0 secs
+formula 25: In(FoundCandy,Drawer)
+clause 0: In(FoundCandy,Drawer)
+CNF conversion took 0 secs
+formula 26: Eat(Jimmy,FoundCandy)
+clause 0: Eat(Jimmy,FoundCandy)
+CNF conversion took 0 secs
+formula 27: Is(FoundCandy,Candy)
+clause 0: Is(FoundCandy,Candy)
+CNF conversion took 0 secs
+formula 28: Guilty(Jimmy)
+clause 0: Guilty(Jimmy)
+CNF conversion took 0 secs
+BEGIN CNF CONVERSION RESULT
+formula 0 idx 0: 2 !Hidden(FoundCandy) v In(FoundCandy,Drawer)
+formula 1 idx 0: 2 !Hidden(Candy) v In(Candy,Drawer)
+formula 2 idx 0: 999 Is(FoundCandy,FoundCandy)
+formula 3 idx 0: 999 Is(Candy,Candy)
+formula 4 idx 0: 1998 Is(FoundCandy,FoundCandy) v !Is(FoundCandy,FoundCandy)
+formula 5 idx 0: 999 Is(FoundCandy,Candy) v !Is(Candy,FoundCandy)
+formula 5 idx 1: 999 Is(Candy,FoundCandy) v !Is(FoundCandy,Candy)
+formula 6 idx 0: 999 Is(Candy,FoundCandy) v !Is(FoundCandy,Candy)
+formula 6 idx 1: 999 Is(FoundCandy,Candy) v !Is(Candy,FoundCandy)
+formula 7 idx 0: 1998 Is(Candy,Candy) v !Is(Candy,Candy)
+formula 8 idx 0: 1998 Is(FoundCandy,FoundCandy) v !Is(FoundCandy,FoundCandy)
+formula 9 idx 0: 999 Is(FoundCandy,Candy) v !Is(FoundCandy,FoundCandy) v !Is(FoundCandy,Candy)
+formula 10 idx 0: 999 Is(FoundCandy,FoundCandy) v !Is(FoundCandy,Candy) v !Is(Candy,FoundCandy)
+formula 11 idx 0: 999 Is(FoundCandy,Candy) v !Is(FoundCandy,Candy) v !Is(Candy,Candy)
+formula 12 idx 0: 999 Is(Candy,FoundCandy) v !Is(FoundCandy,FoundCandy) v !Is(Candy,FoundCandy)
+formula 13 idx 0: 999 Is(Candy,Candy) v !Is(FoundCandy,Candy) v !Is(Candy,FoundCandy)
+formula 14 idx 0: 999 Is(Candy,FoundCandy) v !Is(Candy,FoundCandy) v !Is(Candy,Candy)
+formula 15 idx 0: 1998 Is(Candy,Candy) v !Is(Candy,Candy)
+formula 16 idx 0: 999 In(FoundCandy,Drawer) v !In(FoundCandy,Drawer) v !Is(FoundCandy,FoundCandy)
+formula 17 idx 0: 499.5 In(FoundCandy,Drawer) v !In(Candy,Drawer) v !Is(FoundCandy,Candy)
+formula 17 idx 1: 499.5 In(Candy,Drawer) v !In(FoundCandy,Drawer) v !Is(FoundCandy,Candy)
+formula 18 idx 0: 499.5 In(Candy,Drawer) v !In(FoundCandy,Drawer) v !Is(Candy,FoundCandy)
+formula 18 idx 1: 499.5 In(FoundCandy,Drawer) v !In(Candy,Drawer) v !Is(Candy,FoundCandy)
+formula 19 idx 0: 999 In(Candy,Drawer) v !In(Candy,Drawer) v !Is(Candy,Candy)
+formula 20 idx 0: 2 !In(FoundCandy,Drawer) v Is(FoundCandy,FoundCandy)
+formula 21 idx 0: 2 !In(FoundCandy,Drawer) v !In(Candy,Drawer) v Is(FoundCandy,Candy)
+formula 22 idx 0: 2 !In(FoundCandy,Drawer) v !In(Candy,Drawer) v Is(Candy,FoundCandy)
+formula 23 idx 0: 2 !In(Candy,Drawer) v Is(Candy,Candy)
+formula 24 idx 0: 999 Hidden(Candy)
+formula 25 idx 0: 999 In(FoundCandy,Drawer)
+formula 26 idx 0: 999 Eat(Jimmy,FoundCandy)
+formula 27 idx 0: 999 Is(FoundCandy,Candy)
+formula 28 idx 0: 999 Guilty(Jimmy)
+END CNF CONVERSION RESULT
+Reading query predicates that are specified in query file...
+Hidden(FoundCandy)
+Hidden(Candy)
+In(FoundCandy,Drawer)
+In(Candy,Drawer)
+Is(FoundCandy,FoundCandy)
+Is(FoundCandy,Candy)
+Is(Candy,FoundCandy)
+Is(Candy,Candy)
+Eat(Jimmy,FoundCandy)
+Eat(Jimmy,Candy)
+Guilty(Jimmy)
+Set hard weight to 22999
+creating mrf...
+number of grounded predicates = 11
+number of grounded clauses = 21
+Time taken to construct MRF = 0 secs
+[VS] 0 secs
+>>> DONE: Initial num. of clauses: 21
+Initializing MC-SAT with MaxWalksat on hard clauses...
+Running MC-SAT sampling...
+Sample (per pred) 100, time elapsed = 0 secs, num. preds = 11, num. clauses = 21
+Done burning. 100 samples.
+Sample (per pred) 100, time elapsed = 0.01 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 200, time elapsed = 0.01 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 300, time elapsed = 0.01 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 400, time elapsed = 0.02 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 500, time elapsed = 0.02 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 600, time elapsed = 0.02 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 700, time elapsed = 0.03 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 800, time elapsed = 0.03 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 900, time elapsed = 0.03 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 1000, time elapsed = 0.03 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 1100, time elapsed = 0.03 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 1200, time elapsed = 0.04 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 1300, time elapsed = 0.04 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 1400, time elapsed = 0.04 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 1500, time elapsed = 0.05 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 1600, time elapsed = 0.05 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 1700, time elapsed = 0.05 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 1800, time elapsed = 0.06 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 1900, time elapsed = 0.06 secs, num. preds = 11, num. clauses = 21
+Sample (per pred) 2000, time elapsed = 0.06 secs, num. preds = 11, num. clauses = 21
+Done MC-SAT sampling. 2000 samples.
+Final ground predicate number: 11
+Final ground clause number: 21
+Time taken for MC-SAT sampling = 0.06 secs
+Time taken for SampleSat = 0.04 secs
+Time-Results: Init 0 Run 0.06 Total 0.06
+BEGIN CLAUSE TRUE COUNTS
+clause 0: 2000 / 2000 (1 groundings) 2 !Hidden(FoundCandy) v In(FoundCandy,Drawer)
+clause 1: 2000 / 2000 (1 groundings) 2 !Hidden(Candy) v In(Candy,Drawer)
+clause 2: 2000 / 2000 (1 groundings) 999 Is(FoundCandy,FoundCandy)
+clause 3: 2000 / 2000 (1 groundings) 999 Is(Candy,Candy)
+clause 4: 0 / 2000 (1 groundings) 1998 Is(FoundCandy,FoundCandy) v !Is(FoundCandy,FoundCandy)
+clause 5: 2000 / 2000 (1 groundings) 999 Is(FoundCandy,Candy) v !Is(Candy,FoundCandy)
+clause 6: 2000 / 2000 (1 groundings) 999 Is(Candy,FoundCandy) v !Is(FoundCandy,Candy)
+clause 7: 0 / 2000 (1 groundings) 1998 Is(Candy,Candy) v !Is(Candy,Candy)
+clause 8: 0 / 2000 (1 groundings) 999 Is(FoundCandy,Candy) v !Is(FoundCandy,FoundCandy) v !Is(FoundCandy,Candy)
+clause 9: 2000 / 2000 (1 groundings) 999 Is(FoundCandy,FoundCandy) v !Is(FoundCandy,Candy) v !Is(Candy,FoundCandy)
+clause 10: 0 / 2000 (1 groundings) 999 Is(FoundCandy,Candy) v !Is(FoundCandy,Candy) v !Is(Candy,Candy)
+clause 11: 0 / 2000 (1 groundings) 999 Is(Candy,FoundCandy) v !Is(FoundCandy,FoundCandy) v !Is(Candy,FoundCandy)
+clause 12: 2000 / 2000 (1 groundings) 999 Is(Candy,Candy) v !Is(FoundCandy,Candy) v !Is(Candy,FoundCandy)
+clause 13: 0 / 2000 (1 groundings) 999 Is(Candy,FoundCandy) v !Is(Candy,FoundCandy) v !Is(Candy,Candy)
+clause 14: 0 / 2000 (1 groundings) 999 In(FoundCandy,Drawer) v !In(FoundCandy,Drawer) v !Is(FoundCandy,FoundCandy)
+clause 15: 2000 / 2000 (1 groundings) 499.5 In(FoundCandy,Drawer) v !In(Candy,Drawer) v !Is(FoundCandy,Candy)
+clause 16: 2000 / 2000 (1 groundings) 499.5 In(Candy,Drawer) v !In(FoundCandy,Drawer) v !Is(FoundCandy,Candy)
+clause 17: 2000 / 2000 (1 groundings) 499.5 In(Candy,Drawer) v !In(FoundCandy,Drawer) v !Is(Candy,FoundCandy)
+clause 18: 2000 / 2000 (1 groundings) 499.5 In(FoundCandy,Drawer) v !In(Candy,Drawer) v !Is(Candy,FoundCandy)
+clause 19: 0 / 2000 (1 groundings) 999 In(Candy,Drawer) v !In(Candy,Drawer) v !Is(Candy,Candy)
+clause 20: 2000 / 2000 (1 groundings) 2 !In(FoundCandy,Drawer) v Is(FoundCandy,FoundCandy)
+clause 21: 2000 / 2000 (1 groundings) 2 !In(FoundCandy,Drawer) v !In(Candy,Drawer) v Is(FoundCandy,Candy)
+clause 22: 2000 / 2000 (1 groundings) 2 !In(FoundCandy,Drawer) v !In(Candy,Drawer) v Is(Candy,FoundCandy)
+clause 23: 2000 / 2000 (1 groundings) 2 !In(Candy,Drawer) v Is(Candy,Candy)
+clause 24: 2000 / 2000 (1 groundings) 999 Hidden(Candy)
+clause 25: 2000 / 2000 (1 groundings) 999 In(FoundCandy,Drawer)
+clause 26: 2000 / 2000 (1 groundings) 999 Eat(Jimmy,FoundCandy)
+clause 27: 2000 / 2000 (1 groundings) 999 Is(FoundCandy,Candy)
+clause 28: 2000 / 2000 (1 groundings) 999 Guilty(Jimmy)
+END CLAUSE TRUE COUNTS
+total time taken = 0.06 secs

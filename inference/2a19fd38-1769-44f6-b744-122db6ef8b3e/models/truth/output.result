@@ -1,0 +1,16 @@
+Loves(Fred,Fred) 0.40001
+Loves(Fred,Trains) 0.99995
+Loves(Trains,Fred) 0.364014
+Loves(Trains,Trains) 0.365013
+At(Fred,TrainMuseum) 0.99995
+At(Trains,TrainMuseum) 0.99995
+Play(Fred,TrainModels) 0.99995
+Play(Trains,TrainModels) 0.479002
+See(Fred,Fred) 0.508499
+See(Fred,Trains) 0.99995
+See(Trains,Fred) 0.4965
+See(Trains,Trains) 0.475502
+EnjoySeeing(Fred,Fred) 0.633987
+EnjoySeeing(Fred,Trains) 4.9995e-05
+EnjoySeeing(Trains,Fred) 0.636486
+EnjoySeeing(Trains,Trains) 0.615988

@@ -1,0 +1,21 @@
+character = { Fred, Trains, Animals }
+toy = { AnimalFigurines }
+place = { Zoo }
+Loves(character, character)
+At(character, place)
+Play(character, toy)
+See(character, character)
+999.0 At(Animals, Zoo)
+999.0 See(Fred, Fred) => At(Fred, Zoo) ^ At(Fred, Zoo)
+999.0 See(Fred, Trains) => At(Fred, Zoo) ^ At(Trains, Zoo)
+999.0 See(Fred, Animals) => At(Fred, Zoo) ^ At(Animals, Zoo)
+999.0 See(Trains, Fred) => At(Trains, Zoo) ^ At(Fred, Zoo)
+999.0 See(Trains, Trains) => At(Trains, Zoo) ^ At(Trains, Zoo)
+999.0 See(Trains, Animals) => At(Trains, Zoo) ^ At(Animals, Zoo)
+999.0 See(Animals, Fred) => At(Animals, Zoo) ^ At(Fred, Zoo)
+999.0 See(Animals, Trains) => At(Animals, Zoo) ^ At(Trains, Zoo)
+999.0 See(Animals, Animals) => At(Animals, Zoo) ^ At(Animals, Zoo)
+999.0 Loves(Fred, Animals)
+999.0 Play(Fred, AnimalFigurines)
+999.0 At(Fred, Zoo)
+999.0 See(Fred, Trains)

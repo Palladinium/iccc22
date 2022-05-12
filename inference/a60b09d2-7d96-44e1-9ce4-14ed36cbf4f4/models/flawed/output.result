@@ -1,0 +1,10 @@
+At(Sarah,Park,DuringWalk) 0.99995
+At(Sarah,Park,AfterWalk) 0.840966
+At(Sarah,Home,DuringWalk) 0.530497
+At(Sarah,Home,AfterWalk) 0.99995
+At(Fluffy,Park,DuringWalk) 4.9995e-05
+At(Fluffy,Park,AfterWalk) 0.483502
+At(Fluffy,Home,DuringWalk) 0.99995
+At(Fluffy,Home,AfterWalk) 0.869463
+LongWalk(Sarah) 0.99995
+LongWalk(Fluffy) 0.478502

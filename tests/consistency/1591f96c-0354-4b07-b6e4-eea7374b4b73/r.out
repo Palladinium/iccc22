@@ -1,0 +1,23 @@
+> data <- read.csv("data.csv", header=T)
+> data_a <- data$consistency_low
+> data_b <- data$consistency_high
+> 
+> out <- t.test(data_a, data_b, paired=TRUE, alternative="two.sided")
+> out
+
+	Paired t-test
+
+data:  data_a and data_b
+t = -4.9015, df = 78, p-value = 5.064e-06
+alternative hypothesis: true mean difference is not equal to 0
+95 percent confidence interval:
+ -0.4776227 -0.2017022
+sample estimates:
+mean difference 
+     -0.3396624 
+
+> 
+> library(broom)
+> 
+> write.csv(tidy(out), "out.csv")
+> 

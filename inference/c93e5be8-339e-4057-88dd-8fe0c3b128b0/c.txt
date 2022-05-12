@@ -1,0 +1,5 @@
+Detention(George, Afternoon2)
+FallAsleep(George, Class2)
+InClass(George, Class2)
+InTrouble(George, Class2)
+Student(George)
